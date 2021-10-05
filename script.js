@@ -16,7 +16,7 @@ function TestsFunction() {
 }
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
-  function myFunction() {
+function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
@@ -34,46 +34,71 @@ window.onclick = function(event) {
     }
   }
 }
-
+words = document.querySelector('h3')
 const wunna = () => {
-  console.log('hi')
+  words.innerText = ""
   fetch(gunna[0])
     .then((res) => {
       return res.json()
     }).then((resjson) => {
       lyrics = resjson.lyrics
-      console.log(lyrics)
+      //console.log(lyrics)
+    }).then((spit) => {
+      bar = lyrics.match("I clean up real nice, I don't got a maid")
+      bBar = bar.join()
+      console.log(bBar)
     })
-    console.log('hi')
+  
+    
     fetch(gunna[1])
       .then((res) => {
         return res.json()
       }).then((resjson) => {
         lyrics = resjson.lyrics
-        console.log(lyrics)
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("Got power like Austin, they cap with a gown")
+        bBar = bar.join()
+        console.log(bBar)
       })
-    console.log('hi')
+  
+    
     fetch(gunna[2])
       .then((res) => {
         return res.json()
       }).then((resjson) => {
         lyrics = resjson.lyrics
-        console.log(lyrics)
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("Thank God that He blessed me with talent")
+        bBar = bar.join()
+        console.log(bBar)
       })
-    console.log('hi')
+  
+    
     fetch(gunna[3])
       .then((res) => {
         return res.json()
       }).then((resjson) => {
         lyrics = resjson.lyrics
-        console.log(lyrics)
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("Sometimes a gangsta need a hug")
+        bBar = bar.join()
+        console.log(bBar)
       })
-    console.log('hi')
+  
+    
     fetch(gunna[4])
       .then((res) => {
         return res.json()
       }).then((resjson) => {
         lyrics = resjson.lyrics
-        console.log(lyrics)
-        })
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("I can take care my team now, I'ma hold my whole team down")
+        bBar = bar.join()
+        console.log(bBar)
+      })
+  
 }
