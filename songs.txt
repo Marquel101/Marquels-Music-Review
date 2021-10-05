@@ -1,0 +1,44 @@
+DOJA CAT
+-MOO(https://api.lyrics.ovh/v1/doja_cat/mooo!)
+-KISS ME MORE(https://api.lyrics.ovh/v1/doja_cat/kiss_me_more)
+-SAY SO(https://api.lyrics.ovh/v1/doja_cat/say_so)
+-GET INTO IT YUH(https://api.lyrics.ovh/v1/doja_cat/get_into_it_(yuh))
+-ROLL WITH US(https://api.lyrics.ovh/v1/doja_cat/roll_with_us)
+
+BILLIE EILISH
+-OCEAN EYES(https://api.lyrics.ovh/v1/billie_eilish/ocean_eyes)
+-WHEN THE PARTY'S OVER(ttps://api.lyrics.ovh/v1/billie_eilish/when_the_partys_over)
+-MY FUTURE(https://api.lyrics.ovh/v1/billie_eilish/my_future)
+-EVERYTHING I WANTED(https://api.lyrics.ovh/v1/billie_eilish/everything_i_wanted)
+-IDONTWANNABEYOUANYMORE(https://api.lyrics.ovh/v1/billie_eilish/idontwannabeyouanymore)
+
+
+NICKLEBACK
+-ROCKSTAR(https://api.lyrics.ovh/v1/nickelback/rockstar)
+-PHOTOGRAPH(https://api.lyrics.ovh/v1/nickelback/photograph)
+-BURN IT TO THE GROUND(https://api.lyrics.ovh/v1/nickelback/burn_it_to_the_ground)
+-ANIMALS(https://api.lyrics.ovh/v1/nickelback/animals)
+-HOW YOU REMIND ME(https://api.lyrics.ovh/v1/nickelback/how_you_remind_me)
+
+GUNNA
+-SOLD OUT DATES(https://api.lyrics.ovh/v1/gunna/sold_out_dates)
+-YOUNG WHEEZY(https://api.lyrics.ovh/v1/nav/young_wheezy)
+-ROCKSTAR BIKERS & CHAINS(https://api.lyrics.ovh/v1/gunna/rockstar_bikers_&_chains)
+-WHO YOU FOOLIN(https://api.lyrics.ovh/v1/gunna/who_you_foolin)
+-TOP(https://api.lyrics.ovh/v1/gunna/top_off)
+*-SOLID(https://api.lyrics.ovh/v1/young_thug/solid)
+
+
+
+
+
+
+------------------------------------------------------
+LIL UZI
+-20 MIN ()
+-XO TOUR LIFE()
+-THE WAY LIFE GOES ()
+-DO WHAT I WANT ()
+-WASSUP ()
+-TOO MUCH SAUCE ()
+-WHO RUN IT REMIX ()
