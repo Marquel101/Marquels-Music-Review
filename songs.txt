@@ -22,10 +22,20 @@ NICKLEBACK
 
 GUNNA
 -SOLD OUT DATES(https://api.lyrics.ovh/v1/gunna/sold_out_dates)
+"I clean up real nice, I don't got a maid"
+
 -YOUNG WHEEZY(https://api.lyrics.ovh/v1/nav/young_wheezy)
+
+
 -ROCKSTAR BIKERS & CHAINS(https://api.lyrics.ovh/v1/gunna/rockstar_bikers_&_chains)
+Thank God that He blessed me with talent (Thank God, yeah)
+
 -WHO YOU FOOLIN(https://api.lyrics.ovh/v1/gunna/who_you_foolin)
+Sometimes a gangsta need a hug
+
 -TOP(https://api.lyrics.ovh/v1/gunna/top_off)
+I can take care my team now, I'ma hold my whole team down
+
 *-SOLID(https://api.lyrics.ovh/v1/young_thug/solid)
 
 

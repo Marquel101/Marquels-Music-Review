@@ -7,7 +7,6 @@ const billie = ['https://api.lyrics.ovh/v1/billie_eilish/ocean_eyes', 'https://a
 
 
 function TestsFunction() {
-  document.body.innerHTML =""
   var T = document.getElementById("TestsDiv"),
       displayValue = "";
   if (T.style.display == "")
@@ -36,75 +35,45 @@ window.onclick = function(event) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//var button = document.getElementById('gunna')
-//var print = document.getElementById('glyrics')
-// for (let i = 0; 1 < 6; i++)
-//button.addEventListener('click', () => {
-  //print.innerText = ''
-  
-
-
-  // Promise.all([
-  //   fetch('https://api.lyrics.ovh/v1/gunna/sold_out_dates'),
-  //   fetch('https://api.lyrics.ovh/v1/nav/young_wheezy'),
-  //   fetch('https://api.lyrics.ovh/v1/gunna/rockstar_bikers_&_chains'),
-  //   fetch('https://api.lyrics.ovh/v1/gunna/who_you_foolin'),
-  //   fetch('https://api.lyrics.ovh/v1/gunna/top_off'),
-  // ]).then((res) => {
-  //   return Promise.all(res.map(function (response) {
-  //     return (response)
-  //   }))
-  //   }).then((resjson) => {
-      
-
-
-
-
-
-
-
-  //   })
-    
-    //     const bar = resjson.lyrics
-    //     print.innerText = bar
-    //   }).then
-    // button.addEventListener('click', () => {
-    //   print.innerText = ''
-    //   fetch(gunna[1])
-    //     .then((res) => {
-    //       return res.json()
-    //     }).then((resjson) => {
-    //       console.log(resjson.lyrics)
-    //       const bar = resjson.lyrics
-    //       print.innerText = bar
-    //     })
+const wunna = () => {
+  console.log('hi')
+  fetch(gunna[0])
+    .then((res) => {
+      return res.json()
+    }).then((resjson) => {
+      lyrics = resjson.lyrics
+      console.log(lyrics)
+    })
+    console.log('hi')
+    fetch(gunna[1])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        console.log(lyrics)
+      })
+    console.log('hi')
+    fetch(gunna[2])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        console.log(lyrics)
+      })
+    console.log('hi')
+    fetch(gunna[3])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        console.log(lyrics)
+      })
+    console.log('hi')
+    fetch(gunna[4])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        console.log(lyrics)
+        })
+}
