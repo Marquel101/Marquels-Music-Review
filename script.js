@@ -37,10 +37,13 @@ window.onclick = function(event) {
 words = document.getElementById('artistname')
 
 const bill = () => {
+
+  let songs = document.querySelector('.lyrics')
+  songs.innerHTML = ""
   
   words.innerHTML = "BILLIE"
-
   fetch(billie[0])
+  
     .then((res) => {
       return res.json()
     }).then((resjson) => {
@@ -53,7 +56,7 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    })
+    }).then
   
     
   fetch(billie[1])
@@ -85,7 +88,7 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    })
+    }).then
   
     
   fetch(billie[3])
@@ -101,7 +104,7 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    })
+    }).then
 
   
   fetch(billie[4])
@@ -121,6 +124,10 @@ const bill = () => {
 }
 
 const cat = () => {
+
+  let songs = document.querySelector('.lyrics')
+  songs.innerHTML = ""
+
   words.innerHTML = "DOJA CAT"
   fetch(doja[0])
     .then((res) => {
@@ -198,6 +205,9 @@ const cat = () => {
 }
   
 const back = () => {
+  let songs = document.querySelector('.lyrics')
+  songs.innerHTML = ""
+
   words.innerHTML = "NICKELBACK"
   
   fetch(nickel[0])
@@ -282,6 +292,9 @@ const back = () => {
 }
 
 const wunna = () => {
+  let songs = document.querySelector('.lyrics')
+  songs.innerHTML = ""
+  
   words.innerText="GUNNA"
     fetch(gunna[0])
     .then((res) => {
