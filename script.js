@@ -34,9 +34,14 @@ window.onclick = function(event) {
     }
   }
 }
-words = document.querySelector('h3')
+word = document.getElementById('artistname')
 const wunna = () => {
-  words.innerHTML = "GUNNA"
+  function clearBox(lyrics) {
+    document.querySelector('a').innerHTML = "";
+    document.getElementsByClassName('lyrics').innerHTML = "";
+  }
+  word.innerText="GUNNA"
+  
   document.body.style.backgroundImage = 'url(https://i.imgur.com/YOiHopg.jpg)'
     fetch(gunna[0])
     .then((res) => {
@@ -48,9 +53,9 @@ const wunna = () => {
       bar = lyrics.match("I clean up real nice, I don't got a maid")
       bBar = bar.join()
       console.log(bBar)
-      const test = document.createElement('div')
+      const test = document.createElement('h3')
       test.innerText = bBar
-      document.body.append(test)
+      document.querySelector('.lyrics').append(test)
       
     })
   
@@ -65,9 +70,9 @@ const wunna = () => {
         bar = lyrics.match("Got power like Austin, they cap with a gown")
         bBar = bar.join()
         console.log(bBar)
-        const test = document.createElement('div')
+        const test = document.createElement('h3')
       test.innerText = bBar
-      document.body.append(test)
+      document.querySelector('.lyrics').append(test)
       })
   
     
@@ -81,9 +86,9 @@ const wunna = () => {
         bar = lyrics.match("Thank God that He blessed me with talent")
         bBar = bar.join()
         console.log(bBar)
-        const test = document.createElement('div')
+        const test = document.createElement('h3')
       test.innerText = bBar
-      document.body.append(test)
+      document.querySelector('.lyrics').append(test)
       })
   
     
@@ -97,9 +102,9 @@ const wunna = () => {
         bar = lyrics.match("Sometimes a gangsta need a hug")
         bBar = bar.join()
         console.log(bBar)
-        const test = document.createElement('div')
+        const test = document.createElement('h3')
       test.innerText = bBar
-      document.body.append(test)
+      document.querySelector('.lyrics').append(test)
       })
   
     
@@ -113,10 +118,11 @@ const wunna = () => {
         bar = lyrics.match("I can take care my team now, I'ma hold my whole team down")
         bBar = bar.join()
         console.log(bBar)
-        const test = document.createElement('div')
+        const test = document.createElement('h3')
       test.innerText = bBar
-      document.body.append(test)
+      document.querySelector('.lyrics').append(test)
       })
+  
         
   
 }
