@@ -17,14 +17,14 @@ function TestsFunction() {
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("dropdown").classList.toggle("show");
   }
 
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns = document.getElementsByClassName("artists");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -294,7 +294,7 @@ const back = () => {
 const wunna = () => {
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
-  
+
   words.innerText="GUNNA"
     fetch(gunna[0])
     .then((res) => {
