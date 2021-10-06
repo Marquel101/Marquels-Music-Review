@@ -6,22 +6,13 @@ const nickel = ['https://api.lyrics.ovh/v1/nickelback/rockstar', 'https://api.ly
 const billie = ['https://api.lyrics.ovh/v1/billie_eilish/ocean_eyes', 'https://api.lyrics.ovh/v1/billie_eilish/when_the_partys_over', 'https://api.lyrics.ovh/v1/billie_eilish/my_future', 'https://api.lyrics.ovh/v1/billie_eilish/everything_i_wanted', 'https://api.lyrics.ovh/v1/billie_eilish/idontwannabeyouanymore']
 
 
-function TestsFunction() {
-  var T = document.getElementById("Testsh4"),
-      displayValue = "";
-  if (T.style.display == "")
-      displayValue = "none";
 
-  T.style.display = displayValue;
-}
-  /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
+  /* makes the content show */
 function myFunction() {
     document.getElementById("dropdown").classList.toggle("show");
   }
 
-
-// Close the dropdown menu if the user clicks outside of it
+// Closes droopdown when you click anywhere on screen
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("artists");
@@ -34,6 +25,7 @@ window.onclick = function(event) {
     }
   }
 }
+
 words = document.getElementById('artistname')
 
 const bill = () => {

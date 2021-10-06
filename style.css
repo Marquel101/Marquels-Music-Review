@@ -2,18 +2,12 @@ body {
   background: rgba(113, 29, 182, 0.726);
 }
 
-button {
-  background-color: grey;
-  color: black;
-  border: 2px solid black;
-  transition-duration: 0.4s;
-  border-radius: 20%;
-  font-weight: bold;
-}
+/*when clicked*/
 button:active {
-  transform:translateY(-5px);
+  transform:translateY(20px);
 }
 
+/* button that activates dropdown */
 .dropbtn {
   background-color: #3498DB;
   color: white;
@@ -22,6 +16,10 @@ button:active {
   border: none;
   cursor: pointer;
   text-align: center;
+  font-weight: bold;
+  transition-duration: 1.0s;
+  border-radius: 60%;
+  border: 2px solid black;
 }
 
 /*when mouse is over the button*/
@@ -29,21 +27,19 @@ button:active {
   background-color: #2980B9;
 }
 
-
 .dropdown {
-  position: relative;
+  padding: 50px;
+  margin: 2px;
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 40px;
 }
 
-/* dropdown artist */
+/* dropdown for artist */
 .artists {
   display: none;
   position: relative;
-  
   min-width: 160px;
   width: 200px;
-  z-index: 1;
   
 }
 
@@ -56,35 +52,49 @@ button:active {
   border-radius: 5;
   border: 1px solid #09293d;
   background-color: #a3d5e0;
+  position: sticky;
+  
 }
-.show {display:block;}
+/* get contents to show */
+.show {
+  display: block;
+
+}
+
+/*When mouse hovers each artist*/
 #gunnalink:hover {
   background: rgba(11, 228, 138, 0.609);
   color: white;
+  
 }
 #billielink:hover {
   background-color: rgba(17, 238, 17, 0.842);
   color: white;
+  
 }
 #dojalink:hover {
-  background-color: rgba(255, 19, 223, 0.781);
+  background-color: rgba(240, 78, 218, 0.781);
   color: white;
+  
 }
 #nicklelink:hover {
   background-color: rgba(58, 90, 233, 0.781);
   color: white;
+  
 }
 
-
+/*Title*/
 h1 {
   background-color: red;
   display: table;
 }
 
+/* the lyrics */
 h4 {
   flex: auto;
 }
 
+/*"Need...."*/
 #intro {
   background-image: linear-gradient(rgb(161, 43, 161), pink, purple);
   width: 300px;
@@ -92,4 +102,4 @@ h4 {
   padding: 50px;
   margin: 2px;
   float: right;
-}
+}/**/
