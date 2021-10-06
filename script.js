@@ -40,13 +40,6 @@ const bill = () => {
   
   words.innerHTML = "BILLIE"
 
-  const pic = () => {
-    let photo = document.createElement('img')
-    img.src = 'url(https://i.imgur.com/rIpZiob.jpg)'
-    document.getElementById('artistphoto').appendChild(photo)
-  
-  }
-  document.body.style.backgroundImage = 'url(https://i.imgur.com/rIpZiob.jpg)'
   fetch(billie[0])
     .then((res) => {
       return res.json()
@@ -129,7 +122,6 @@ const bill = () => {
 
 const cat = () => {
   words.innerHTML = "DOJA CAT"
-  document.body.style.backgroundImage = 'url(https://i.imgur.com/6QbQpIg.jpg)'
   fetch(doja[0])
     .then((res) => {
       return res.json()
@@ -207,7 +199,7 @@ const cat = () => {
   
 const back = () => {
   words.innerHTML = "NICKELBACK"
-  document.body.style.backgroundImage = 'url(https://i.imgur.com/GqO53uG.jpg)'
+  
   fetch(nickel[0])
     .then((res) => {
       return res.json()
@@ -291,9 +283,6 @@ const back = () => {
 
 const wunna = () => {
   words.innerText="GUNNA"
-  //document.body.style.backgroundImage = 'url(https://i.imgur.com/YOiHopg.jpg)'
-  //document.body.style.backgroundRepeat = 'no-repeat'
-  //document.body.style.backgroundSize = 'auto'
     fetch(gunna[0])
     .then((res) => {
       return res.json()

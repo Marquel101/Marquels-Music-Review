@@ -77,7 +77,9 @@ const gunna = {
 
 
 
-
+'url(https://i.imgur.com/rIpZiob.jpg)'
+document.body.style.backgroundImage = 'url(https://i.imgur.com/6QbQpIg.jpg)'
+document.body.style.backgroundImage = 'url(https://i.imgur.com/GqO53uG.jpg)'
 
 
 
