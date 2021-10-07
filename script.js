@@ -29,11 +29,15 @@ window.onclick = function(event) {
 words = document.getElementById('artistname')
 
 const bill = () => {
+  let intro = document.getElementById('intro')
+  intro.remove()
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
   
   words.innerHTML = "BILLIE"
+
+
   fetch(billie[0])
   
     .then((res) => {
@@ -112,9 +116,102 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
+    }).then((image) => {
+      document.body.style.background =  `url(billie1.jpg)`
     })
+    
 }
+const wunna = () => {
+  let intro = document.getElementById('intro')
+  intro.remove()
 
+  let songs = document.querySelector('.lyrics')
+  songs.innerHTML = ""
+  
+  words.innerText="GUNNA"
+    fetch(gunna[0])
+    .then((res) => {
+      return res.json()
+    }).then((resjson) => {
+      lyrics = resjson.lyrics
+      //console.log(lyrics)
+    }).then((spit) => {
+      bar = lyrics.match("I clean up real nice, I don't got a maid")
+      bBar = bar.join()
+      console.log(bBar)
+      const test = document.createElement('h4')
+      test.innerText = bBar
+      document.querySelector('.lyrics').append(test)
+      
+    })
+  
+    
+    fetch(gunna[1])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("Got power like Austin, they cap with a gown")
+        bBar = bar.join()
+        console.log(bBar)
+        const test = document.createElement('h4')
+        test.innerText = bBar
+        document.querySelector('.lyrics').append(test)
+      })
+  
+    
+    fetch(gunna[2])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("Thank God that He blessed me with talent")
+        bBar = bar.join()
+        console.log(bBar)
+        const test = document.createElement('h4')
+      test.innerText = bBar
+      document.querySelector('.lyrics').append(test)
+      })
+  
+    
+    fetch(gunna[3])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("Sometimes a gangsta need a hug")
+        bBar = bar.join()
+        console.log(bBar)
+        const test = document.createElement('h4')
+      test.innerText = bBar
+      document.querySelector('.lyrics').append(test)
+      })
+  
+    
+    fetch(gunna[4])
+      .then((res) => {
+        return res.json()
+      }).then((resjson) => {
+        lyrics = resjson.lyrics
+        //console.log(lyrics)
+      }).then((spit) => {
+        bar = lyrics.match("I can take care my team now, I'ma hold my whole team down")
+        bBar = bar.join()
+        console.log(bBar)
+        const test = document.createElement('h4')
+      test.innerText = bBar
+      document.querySelector('.lyrics').append(test)
+      })
+  
+        
+  
+}
 const cat = () => {
 
   let songs = document.querySelector('.lyrics')
@@ -142,7 +239,7 @@ const cat = () => {
       lyrics = resjson.lyrics
       //console.log(lyrics)
     }).then((spit) => {
-      bar = lyrics.match("Sugar, I ain't no dummy, dumm")
+      bar = lyrics.match("Sugar, I ain't no dummy, dummy")
       bBar = bar.join()
       console.log(bBar)
       const test = document.createElement('h4')
@@ -193,9 +290,10 @@ const cat = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
+    }).then((image) => {
+      document.body.style.background =  `url(doja1.jpg)`
     })
 }
-  
 const back = () => {
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
@@ -283,91 +381,4 @@ const back = () => {
 
 }
 
-const wunna = () => {
-  let songs = document.querySelector('.lyrics')
-  songs.innerHTML = ""
 
-  words.innerText="GUNNA"
-    fetch(gunna[0])
-    .then((res) => {
-      return res.json()
-    }).then((resjson) => {
-      lyrics = resjson.lyrics
-      //console.log(lyrics)
-    }).then((spit) => {
-      bar = lyrics.match("I clean up real nice, I don't got a maid")
-      bBar = bar.join()
-      console.log(bBar)
-      const test = document.createElement('h4')
-      test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
-      
-    })
-  
-    
-    fetch(gunna[1])
-      .then((res) => {
-        return res.json()
-      }).then((resjson) => {
-        lyrics = resjson.lyrics
-        //console.log(lyrics)
-      }).then((spit) => {
-        bar = lyrics.match("Got power like Austin, they cap with a gown")
-        bBar = bar.join()
-        console.log(bBar)
-        const test = document.createElement('h4')
-        test.innerText = bBar
-        document.querySelector('.lyrics').append(test)
-      })
-  
-    
-    fetch(gunna[2])
-      .then((res) => {
-        return res.json()
-      }).then((resjson) => {
-        lyrics = resjson.lyrics
-        //console.log(lyrics)
-      }).then((spit) => {
-        bar = lyrics.match("Thank God that He blessed me with talent")
-        bBar = bar.join()
-        console.log(bBar)
-        const test = document.createElement('h4')
-      test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
-      })
-  
-    
-    fetch(gunna[3])
-      .then((res) => {
-        return res.json()
-      }).then((resjson) => {
-        lyrics = resjson.lyrics
-        //console.log(lyrics)
-      }).then((spit) => {
-        bar = lyrics.match("Sometimes a gangsta need a hug")
-        bBar = bar.join()
-        console.log(bBar)
-        const test = document.createElement('h4')
-      test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
-      })
-  
-    
-    fetch(gunna[4])
-      .then((res) => {
-        return res.json()
-      }).then((resjson) => {
-        lyrics = resjson.lyrics
-        //console.log(lyrics)
-      }).then((spit) => {
-        bar = lyrics.match("I can take care my team now, I'ma hold my whole team down")
-        bBar = bar.join()
-        console.log(bBar)
-        const test = document.createElement('h4')
-      test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
-      })
-  
-        
-  
-}
