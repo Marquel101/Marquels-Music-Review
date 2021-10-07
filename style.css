@@ -94,21 +94,16 @@ h1 {
 
 /* the lyrics */
 h4 {
-  color: rgb(5, 1, 1);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
+  color: rgb(174, 199, 85);
+  display: inline-table;
+  border: 5px solid rgba(11, 228, 138, 0.609);
   text-align : center;
-  border: 5px solid rgb(12, 11, 11);
-  height: 20%;
-  padding: 4px;
-  margin: 20px;
-  
-  font-size: smaller;
-  
-  
-  
+  padding: 40px;
+  height: 90px;
+  width: 90px;
+  margin: 300px 0 0 0;
+  margin-left: 70px;
+  margin-bottom: 70px;
 }
 
 /*"Intro"*/
@@ -124,9 +119,8 @@ h4 {
 
 .brief {
   display: flex;
-
-  color: red;
   padding: 40px;
+  margin: 30px 500px 30px 0;
 }
 
 
