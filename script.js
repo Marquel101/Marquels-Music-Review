@@ -25,35 +25,45 @@ window.onclick = function(event) {
     }
   }
 }
-
+//variables
 words = document.getElementById('artistname')
 let intro = document.getElementById('intro')
+var n = document.getElementById("nickel.bio")
+var b = document.getElementById("billie.bio")
+var g = document.getElementById("gunna.bio")
+var d = document.getElementById("doja.bio")
 
 const bill = () => {
-  
-  var x = document.getElementById("billie.bio");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
 
+  //clears bios so that only the artist bio shows
+  //I FIGURED THIS OUT MYSELF
+  
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
-  
+  if (g.style.display === "block" ) {
+    g.style.display = "none";
+  };
+  if (n.style.display === "block" ) {
+    n.style.display = "none";
+  };
+  if (d.style.display === "block" ) {
+    d.style.display = "none";
+  };
+  if (b.style.display === "none" ) {
+    b.style.display = "block";
+  };
   words.innerHTML = "BILLIE"
 
   document.body.style.background = ('rgba(233, 210, 147, 0.842)')
-
+  //the way my API is set up I had to fetch each individual song for every artist
   fetch(billie[0])
-    
-  
     .then((res) => {
       return res.json()
     }).then((resjson) => {
       lyrics = resjson.lyrics
       //console.log(lyrics)
     }).then((spit) => {
+      //this gives me my exact phrase from song
       bar = lyrics.match('You really know how to make me cry')
       bBar = bar.join()
       console.log(bBar)
@@ -61,8 +71,6 @@ const bill = () => {
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
     }).then
-  
-    
   fetch(billie[1])
     .then((res) => {
       return res.json()
@@ -76,9 +84,7 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    })
-  
-    
+    }) 
   fetch(billie[2])
     .then((res) => {
       return res.json()
@@ -93,8 +99,6 @@ const bill = () => {
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
     }).then
-  
-    
   fetch(billie[3])
     .then((res) => {
       return res.json()
@@ -109,8 +113,6 @@ const bill = () => {
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
     }).then
-
-  
   fetch(billie[4])
     .then((res) => {
       return res.json()
@@ -124,17 +126,22 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    })
-    
+    }) 
 }
 const wunna = () => {
 
-  var x = document.getElementById("gunna.bio");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  if (b.style.display === "block" ) {
+    b.style.display = "none";
+  };
+  if (n.style.display === "block" ) {
+    n.style.display = "none";
+  };
+  if (d.style.display === "block" ) {
+    d.style.display = "none";
+  };
+  if (g.style.display === "none" ) {
+    g.style.display = "block";
+  };
 
     let songs = document.querySelector('.lyrics')
     songs.innerHTML = ""
@@ -224,12 +231,19 @@ const wunna = () => {
 }
 const cat = () => {
 
-  var x = document.getElementById("doja.bio");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  
+  if (g.style.display === "block" ) {
+    g.style.display = "none";
+  };
+  if (n.style.display === "block" ) {
+    n.style.display = "none";
+  };
+  if (b.style.display === "block" ) {
+    b.style.display = "none";
+  };
+  if (d.style.display === "none" ) {
+    d.style.display = "block";
+  };
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
@@ -312,12 +326,19 @@ const cat = () => {
     })
 }
 const back = () => {
-  var x = document.getElementById("billie.bio");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  
+  if (g.style.display === "block" ) {
+    g.style.display = "none";
+  };
+  if (b.style.display === "block" ) {
+    b.style.display = "none";
+  };
+  if (d.style.display === "block" ) {
+    d.style.display = "none";
+  };
+  if (n.style.display === "none" ) {
+    n.style.display = "block";
+  };
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""

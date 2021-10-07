@@ -11,34 +11,37 @@
 </head>
 
 <body>
-  
   <div id="default">
     <h2 id="intro">Need suggestions on people to listen to? Wanna get groovy but don't know who can get your body moving? Or do you just want to see who I do or don't listen to? I'm Marquel, and consider yourself lucky. Here you will see all the artist I have listened to and my thoughts of them. If you have any suggestions submit them below, and you'll see their name added within 2 - 30 business days. </h2>
   </div>
+  <div class="dropdown">
+      <button onclick="myFunction(); return false;" class="dropbtn">A R T I S T</button>
+      <div id="dropdown" class="artists">
+        <a id='billielink'href="#" onclick="bill()">BILLIE EILISH</a>
+        <a id='gunnalink'href="#" onclick="wunna()">GUNNA</a>
+        <a id='dojalink'href="#" onclick="cat()">DOJA CAT</a>
+        <a id='nickellink'href="#" onclick="back()">NICKELBACK</a>
+      </div>
+    </div>
 
+  <div id='artistphoto'></div>
+
+  <div class="artist">
+    <h2 id="artistname"></h2>
+  </div>
   <div class = "breif">
     <h2 id ="gunna.bio" style="display: none;"> One of my favorite newer rappers, Gunna has definitely made a name for himself in the game. HIs soft voice over an incredibly produced beat makes his songs so enjoyable. His flow is unique and his fashion is over the top. Gunna is good for most situations, but best fits for car rides. </h2>
 
     <h2 id ="doja.bio" style="display: none;">Doja is hilarious. She always seems to have fun with what she is doing, and I always have fun listening to her. Her songs are lively and makes it hard to sit style listening to her. She definietly should be played anytime you are in your own world at home.</h2>
 
-    <h2 id ="nickel.bio" style="display: none;">Look, i know most rock fans will tell you they're not rock, but they are rock. And for someone who grew up hearing their songs from WWE, Monster Jam, and other events, they are not bad. They are very commercially good. I think that their music is meant to be played at public events.</h2>
+    <h2 id ="nickel.bio" style="display: none;">Look, I know most rock fans will tell you Nickelback is not rock, but they are rock. And for someone who grew up hearing their songs from WWE, Monster Jam, and other events, they are not bad. They are very commercially good. I think that their music is meant to be played at public events.</h2>
 
     <h2 id="billie.bio" style="display: none">With a unique singing voice and a funky style, she is becoming an icon for Gen Z. She is a very creative artist with a wide arrange of songs that are fun to sing along with. Her wide range of songs are perfect for small groups.</h2>
   </div>
 
-    <div class="dropdown">
-      <button onclick="myFunction(); return false;" class="dropbtn">A R T I S T</button>
-      <div id="dropdown" class="artists">
-        <a id='billielink'href="#" onclick="bill()">BILLIE </a>
-        <a id='gunnalink'href="#" onclick="wunna()">GUNNA</a>
-        <a id='dojalink'href="#" onclick="cat()">DOJA CAT</a>
-        <a id='nicklelink'href="#" onclick="back()">NICKLEBACK</a>
-      </div>
-    </div>
-
-  <div id='artistphoto'></div>
+    
+  
   <div class="artist">
-    <h2 id="artistname"></h2>
     <h3 class="lyrics"></h3>
   </div>
 
