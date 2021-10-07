@@ -7,7 +7,7 @@ const billie = ['https://api.lyrics.ovh/v1/billie_eilish/ocean_eyes', 'https://a
 
 
 
-  /* makes the content show */
+/* makes the content show */
 function myFunction() {
     document.getElementById("dropdown").classList.toggle("show");
   }
@@ -41,6 +41,7 @@ const bill = () => {
   
   words.innerHTML = "BILLIE"
 
+  document.body.style.background = ('rgba(233, 210, 147, 0.842)')
 
   fetch(billie[0])
   
@@ -120,12 +121,7 @@ const bill = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    }).then((image) => {
-      document.body.style.background =  `url(billie1.jpg)`
-    })//.then((who) => {
-    //   let bio = document.getElementById('billie.bio')
-    //   bio.style.display ='block'
-    // })
+    })
     
 }
 const wunna = () => {
@@ -133,6 +129,8 @@ const wunna = () => {
     let songs = document.querySelector('.lyrics')
     songs.innerHTML = ""
     words.innerHTML = "GUNNA"
+
+    document.body.style.background = ('rgba(11, 228, 138, 0.609)')
   
     fetch(gunna[0])
     .then((res) => {
@@ -213,14 +211,13 @@ const wunna = () => {
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
       })
-  
-        
-  
 }
 const cat = () => {
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
+
+  document.body.style.background = ('rgba(240, 78, 218, 0.781)')
 
   words.innerHTML = "DOJA CAT"
   fetch(doja[0])
@@ -295,13 +292,13 @@ const cat = () => {
       const test = document.createElement('h4')
       test.innerText = bBar
       document.querySelector('.lyrics').append(test)
-    }).then((image) => {
-      document.body.style.background =  `url(doja1.jpg)`
     })
 }
 const back = () => {
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
+
+  document.body.style.background = ('rgba(58, 90, 233, 0.781)')
 
   words.innerHTML = "NICKELBACK"
   
@@ -383,7 +380,6 @@ const back = () => {
         test.innerText = bBar
         document.querySelector('.lyrics').append(test)
       })
-
 }
 
 
