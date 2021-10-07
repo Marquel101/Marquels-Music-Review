@@ -54,7 +54,6 @@ const bill = () => {
   };
   words.innerHTML = "BILLIE"
 
-  document.body.style.background = ('rgba(233, 210, 147, 0.842)')
   //the way my API is set up I had to fetch each individual song for every artist
   fetch(billie[0])
     .then((res) => {
