@@ -27,10 +27,14 @@ window.onclick = function(event) {
 }
 
 words = document.getElementById('artistname')
+let intro = document.getElementById('intro')
 
 const bill = () => {
+  
+  let bio = document.getElementById('billie.bio')
+
   let intro = document.getElementById('intro')
-  intro.remove()
+  intro.innerText = bio
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
@@ -118,17 +122,18 @@ const bill = () => {
       document.querySelector('.lyrics').append(test)
     }).then((image) => {
       document.body.style.background =  `url(billie1.jpg)`
-    })
+    })//.then((who) => {
+    //   let bio = document.getElementById('billie.bio')
+    //   bio.style.display ='block'
+    // })
     
 }
 const wunna = () => {
-  let intro = document.getElementById('intro')
-  intro.remove()
 
-  let songs = document.querySelector('.lyrics')
-  songs.innerHTML = ""
+    let songs = document.querySelector('.lyrics')
+    songs.innerHTML = ""
+    words.innerHTML = "GUNNA"
   
-  words.innerText="GUNNA"
     fetch(gunna[0])
     .then((res) => {
       return res.json()
