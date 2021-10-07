@@ -86,39 +86,47 @@ button:active {
 
 /*Title*/
 h1 {
-  background-color: red;
-  display: table;
+  
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 /* the lyrics */
-
 h4 {
-  color: red;
-  display: table;
-  justify-content: space-between;
+  color: rgb(5, 1, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-end;
   text-align : center;
   border: 5px solid rgb(12, 11, 11);
   height: 20%;
-  padding: 40px;
+  padding: 4px;
   margin: 20px;
-  border-radius: 100%;
-  background: white;
+  
+  font-size: smaller;
+  
   
   
 }
 
-/*"Need...."*/
+/*"Intro"*/
 #intro {
+  display: flex;
   background: whitesmoke;
   width: 300px;
-  border: 5px solid rgb(188, 238, 188);
+  border: 10px ridge rgb(78, 80, 80);
   padding: 40px;
   margin: 0px;
   float: right;
 }/**/
 
-#artistphoto {
-  border-radius: 50%;
+.brief {
+  display: flex;
+
+  color: red;
+  padding: 40px;
 }
+
+
