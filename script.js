@@ -32,13 +32,15 @@ var n = document.getElementById("nickel.bio")
 var b = document.getElementById("billie.bio")
 var g = document.getElementById("gunna.bio")
 var d = document.getElementById("doja.bio")
+box = document.querySelector('.lyrics')
+
 
 const bill = () => {
 
   //clears bios so that only the artist bio shows
   //I FIGURED THIS OUT MYSELF
   
-  let songs = document.querySelector('.lyrics')
+  let songs = box
   songs.innerHTML = ""
   if (g.style.display === "block" ) {
     g.style.display = "none";
@@ -50,7 +52,7 @@ const bill = () => {
     d.style.display = "none";
   };
   if (b.style.display === "none" ) {
-    b.style.display = "block";
+    b.style.display = "block"; b.style.border = '3px ridge dodgerblue';b.style.padding = '20px'
   };
   words.innerHTML = "BILLIE"
   document.body.style.backgroundImage = 'url(https://i.imgur.com/fUmPlII.jpg)'
@@ -73,7 +75,7 @@ const bill = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     }).then
   fetch(billie[1])
     .then((res) => {
@@ -87,7 +89,7 @@ const bill = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     }) 
   fetch(billie[2])
     .then((res) => {
@@ -101,7 +103,7 @@ const bill = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     }).then
   fetch(billie[3])
     .then((res) => {
@@ -115,7 +117,7 @@ const bill = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     }).then
   fetch(billie[4])
     .then((res) => {
@@ -129,8 +131,10 @@ const bill = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
-    }) 
+      box.append(test)
+    })
+  box.style.margin = "-0 0px 300px 0px"
+  box.style.color = "white"
 }
 const wunna = () => {
 
@@ -150,8 +154,9 @@ const wunna = () => {
   document.body.style.backgroundRepeat = 'no-repeat'
   document.body.style.backgroundSize = 'cover'
   document.body.style.backgroundPosition = 'center'
+  
 
-    let songs = document.querySelector('.lyrics')
+    let songs = box
     songs.innerHTML = ""
     words.innerHTML = "GUNNA"
 
@@ -169,7 +174,7 @@ const wunna = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
       
     })
   
@@ -186,7 +191,7 @@ const wunna = () => {
         console.log(bBar)
         const test = document.createElement('h4')
         test.innerText = bBar
-        document.querySelector('.lyrics').append(test)
+        box.append(test)
       })
   
     
@@ -202,7 +207,7 @@ const wunna = () => {
         console.log(bBar)
         const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
       })
   
     
@@ -218,7 +223,7 @@ const wunna = () => {
         console.log(bBar)
         const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
       })
   
     
@@ -234,8 +239,12 @@ const wunna = () => {
         console.log(bBar)
         const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+        box.append(test)
+        box.style.color = "black"
       })
+  box.style.margin = "-0 0px 350px 0px"
+
+  
 }
 const cat = () => {
 
@@ -253,7 +262,7 @@ const cat = () => {
     d.style.display = "block";
   };
 
-  let songs = document.querySelector('.lyrics')
+  let songs = box
   songs.innerHTML = ""
 
   document.body.style.backgroundImage = 'url(https://i.imgur.com/EMDyXl0.jpg)'
@@ -274,7 +283,7 @@ const cat = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     })
     fetch(doja[1])
     .then((res) => {
@@ -288,7 +297,7 @@ const cat = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     })
   
   fetch(doja[2])
@@ -303,7 +312,7 @@ const cat = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     })
   
   fetch(doja[3])
@@ -318,7 +327,7 @@ const cat = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     })
   
   fetch(doja[4])
@@ -333,8 +342,10 @@ const cat = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     })
+  box.style.color = "rgba(149, 87, 146, 0.965)"
+  box.style.margin = "-0 0px 350px 0px"
 }
 const back = () => {
   
@@ -351,7 +362,7 @@ const back = () => {
     n.style.display = "block";
   };
 
-  let songs = document.querySelector('.lyrics')
+  let songs = box
   songs.innerHTML = ""
   document.body.style.backgroundImage = 'url(https://i.imgur.com/C4oqK7d.jpg)'
   document.body.style.backgroundRepeat = 'no-repeat'
@@ -372,7 +383,7 @@ const back = () => {
       console.log(bBar)
       const test = document.createElement('h4')
       test.innerText = bBar
-      document.querySelector('.lyrics').append(test)
+      box.append(test)
     })
   
     
@@ -388,7 +399,7 @@ const back = () => {
         console.log(bBar)
         const test = document.createElement('h4')
         test.innerText = bBar
-        document.querySelector('.lyrics').append(test)
+        box.append(test)
       })
   
     
@@ -404,7 +415,7 @@ const back = () => {
         console.log(bBar)
         const test = document.createElement('h4')
         test.innerText = bBar
-        document.querySelector('.lyrics').append(test)
+        box.append(test)
       })
   
     
@@ -420,7 +431,7 @@ const back = () => {
         console.log(bBar)
         const test = document.createElement('h4')
         test.innerText = bBar
-        document.querySelector('.lyrics').append(test)
+        box.append(test)
       })
   
     
@@ -436,8 +447,10 @@ const back = () => {
         console.log(bBar)
         const test = document.createElement('h4')
         test.innerText = bBar
-        document.querySelector('.lyrics').append(test)
+        box.append(test)
       })
+      box.style.color = "black"
+      box.style.margin = "-50px 0px 450px 0px"
 }
 
 

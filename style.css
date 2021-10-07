@@ -94,9 +94,8 @@ h1 {
 
 /* the lyrics */
 h4 {
-  color: rgb(174, 199, 85);
   display: inline-table;
-  border: 5px solid rgba(11, 228, 138, 0.609);
+  border: 5px outset rgba(149, 87, 146, 0.965);
   text-align : center;
   padding: 40px;
   height: 90px;
