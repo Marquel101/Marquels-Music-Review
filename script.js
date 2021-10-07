@@ -31,10 +31,12 @@ let intro = document.getElementById('intro')
 
 const bill = () => {
   
-  let bio = document.getElementById('billie.bio')
-
-  let intro = document.getElementById('intro')
-  intro.innerText = bio
+  var x = document.getElementById("billie.bio");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
@@ -44,6 +46,7 @@ const bill = () => {
   document.body.style.background = ('rgba(233, 210, 147, 0.842)')
 
   fetch(billie[0])
+    
   
     .then((res) => {
       return res.json()
@@ -125,6 +128,13 @@ const bill = () => {
     
 }
 const wunna = () => {
+
+  var x = document.getElementById("gunna.bio");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 
     let songs = document.querySelector('.lyrics')
     songs.innerHTML = ""
@@ -214,6 +224,13 @@ const wunna = () => {
 }
 const cat = () => {
 
+  var x = document.getElementById("doja.bio");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
 
@@ -295,11 +312,16 @@ const cat = () => {
     })
 }
 const back = () => {
+  var x = document.getElementById("billie.bio");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
-
   document.body.style.background = ('rgba(58, 90, 233, 0.781)')
-
   words.innerHTML = "NICKELBACK"
   
   fetch(nickel[0])
