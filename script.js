@@ -53,7 +53,8 @@ const bill = () => {
     b.style.display = "block";
   };
   words.innerHTML = "BILLIE"
-
+  const bBack = `https://i.imgur.com/9tP5GXv.jpg`
+  document.body.style.backgroundImage = 'url(https://i.imgur.com/9tP5GXv.jpg)'
   //the way my API is set up I had to fetch each individual song for every artist
   fetch(billie[0])
     .then((res) => {
@@ -141,12 +142,12 @@ const wunna = () => {
   if (g.style.display === "none" ) {
     g.style.display = "block";
   };
-
+  document.body.style.backgroundImage = 'url(https://i.imgur.com/2Rc7G0i.jpg)'
     let songs = document.querySelector('.lyrics')
     songs.innerHTML = ""
     words.innerHTML = "GUNNA"
 
-    document.body.style.background = ('rgba(11, 228, 138, 0.609)')
+    //document.body.style.background = ('rgba(11, 228, 138, 0.609)')
   
     fetch(gunna[0])
     .then((res) => {
@@ -247,7 +248,7 @@ const cat = () => {
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
 
-  document.body.style.background = ('rgba(240, 78, 218, 0.781)')
+  document.body.style.backgroundImage = 'url(https://i.imgur.com/EMDyXl0.jpg)'
 
   words.innerHTML = "DOJA CAT"
   fetch(doja[0])
@@ -341,7 +342,7 @@ const back = () => {
 
   let songs = document.querySelector('.lyrics')
   songs.innerHTML = ""
-  document.body.style.background = ('rgba(58, 90, 233, 0.781)')
+  document.body.style.backgroundImage = 'url(https://i.imgur.com/C4oqK7d.jpg)'
   words.innerHTML = "NICKELBACK"
   
   fetch(nickel[0])
