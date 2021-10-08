@@ -80,7 +80,8 @@ button:active {
   display: block;
 
 }
-
+/*HOVER HELP*/
+/*https://www.w3schools.com/cssref/sel_hover.asp*/
 /*When mouse hovers each artist*/
 #gunnalink:hover {
   background: rgba(11, 228, 138, 0.609);

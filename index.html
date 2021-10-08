@@ -7,7 +7,8 @@
   <script src="script.js"defer></script>
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
-  <!--FONT LINKS -->
+  <!--FONT LINKS HELP -->
+  <!--https://codeburst.io/intro-to-google-fonts-for-web-developers-5559b63807d3 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -17,13 +18,17 @@
   <title>Marquel's Music </title> 
   <h1><span>MARQUEL'S MUSIC CONSIDERATION</span></h1>
   <a id="home" href="index.html">HOME</a>
+ <header>
+ </header> 
 </head>
 
 <body>
   <div id="default">
-    <h2 id="intro">Need suggestions on people to listen to? Wanna get groovy but don't know who can get your body moving? Or do you just want to see who I do or don't listen to? I'm Marquel, and consider yourself lucky. Here you will see all the artist I have listened to and my thoughts of them. If you have any suggestions submit them below, and you'll see their name added within 2 - 30 business days. </h2>
+    <h2 id="intro">Need suggestions on people to listen to? Wanna get groovy but don't know who can get your body moving? Or do you just want to see who I do or don't listen to? I'm Marquel, and consider yourself lucky. Here you will see all the artist I have listened to and my thoughts of them. If you feel a certain way about any of my reviews, you will simply just have to deal with it. <br> :)</h2>
   </div>
   <div class="dropdown">
+    <!--onclick EVENT HELP-->
+    <!--https://www.w3schools.com/jsref/event_onclick.asp-->
       <button onclick="myFunction(); return false;" class="dropbtn">A R T I S T</button>
       <div id="dropdown" class="artists">
         <a id='billielink'href="#" onclick="bill()">BILLIE EILISH</a>
@@ -37,6 +42,8 @@
     <h2 id="artistname"></h2>
   </div>
   <div class = "brief">
+    <!--HIDING ELEMENTS-->
+    <!--https://stackoverflow.com/questions/6242976/javascript-hide-show-element-->
     <h2 id ="gunna.bio" style="display: none;"> One of my favorite newer rappers, Gunna has definitely made a name for himself in the game. HIs soft voice over an incredibly produced beat makes his songs so enjoyable. His flow is unique and his fashion is over the top. Gunna is good for most situations, but best fits for car rides. </h2>
 
     <h2 id ="doja.bio" style="display: none;">Doja is hilarious. She always seems to have fun with what she is doing, and I always have fun listening to her. Her songs are lively and makes it hard to sit style listening to her. She definietly should be played anytime you are in your own world at home.</h2>

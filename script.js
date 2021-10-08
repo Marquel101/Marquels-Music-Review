@@ -5,14 +5,14 @@ const doja = ['https://api.lyrics.ovh/v1/doja_cat/mooo!', 'https://api.lyrics.ov
 const nickel = ['https://api.lyrics.ovh/v1/nickelback/rockstar', 'https://api.lyrics.ovh/v1/nickelback/photograph', 'https://api.lyrics.ovh/v1/nickelback/burn_it_to_the_ground', 'https://api.lyrics.ovh/v1/nickelback/animals', 'https://api.lyrics.ovh/v1/nickelback/how_you_remind_me']
 const billie = ['https://api.lyrics.ovh/v1/billie_eilish/ocean_eyes', 'https://api.lyrics.ovh/v1/billie_eilish/when_the_partys_over', 'https://api.lyrics.ovh/v1/billie_eilish/my_future', 'https://api.lyrics.ovh/v1/billie_eilish/everything_i_wanted', 'https://api.lyrics.ovh/v1/billie_eilish/idontwannabeyouanymore']
 
-
-
+//DROPDOWN MENU HELP
+//https://www.w3schools.com/css/css_dropdowns.asp
 /* makes the content show */
 function myFunction() {
     document.getElementById("dropdown").classList.toggle("show");
-  }
+}
 
-// Closes droopdown when you click anywhere on screen
+//Closes droopdown when you click anywhere on screen
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("artists");
@@ -21,6 +21,8 @@ window.onclick = function(event) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
+        //REMOVE METHOD HELP
+        //https://developer.mozilla.org/en-US/docs/Web/API/Element/remove
       }
     }
   }
@@ -34,9 +36,7 @@ var g = document.getElementById("gunna.bio")
 var d = document.getElementById("doja.bio")
 box = document.querySelector('.lyrics')
 
-
 const bill = () => {
-
   //clears bios so that only the artist bio shows
   //I FIGURED THIS OUT MYSELF
   
@@ -61,7 +61,6 @@ const bill = () => {
   document.body.style.backgroundRepeat = 'no-repeat'
   document.body.style.backgroundSize = 'cover'
   document.body.style.backgroundPosition = 'center'
-  
 
   //the way my API is set up I had to fetch each individual song for every artist
   fetch(billie[0])
@@ -71,6 +70,8 @@ const bill = () => {
       lyrics = resjson.lyrics
       //console.log(lyrics)
     }).then((spit) => {
+      //MATCH METHOD HELP
+      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
       //this gives me my exact phrase from song
       bar = lyrics.match('You really know how to make me cry')
       bBar = bar.join()
@@ -161,8 +162,6 @@ const wunna = () => {
     let songs = box
     songs.innerHTML = ""
     words.innerHTML = "GUNNA"
-
-    //document.body.style.background = ('rgba(11, 228, 138, 0.609)')
   
     fetch(gunna[0])
     .then((res) => {
@@ -367,9 +366,6 @@ const back = () => {
     n.style.display = "block"; n.style.border = '6px ridge rgb(191, 117, 194)'; n.style.padding = '20px'; n.style.backgroundColor = "rgb(209, 210, 221)";
   }
 
-  
-  
-  
   document.body.style.backgroundImage = 'url(https://i.imgur.com/C4oqK7d.jpg)'
   document.body.style.backgroundRepeat = 'no-repeat'
   document.body.style.backgroundSize = 'cover'
@@ -459,7 +455,3 @@ const back = () => {
       box.style.color = "black"
       box.style.margin = "-50px 0px 450px 0px"
 }
-
-
-
-
