@@ -52,7 +52,7 @@ const bill = () => {
     d.style.display = "none";
   };
   if (b.style.display === "none" ) {
-    b.style.display = "block"; b.style.border = '3px ridge dodgerblue';b.style.padding = '20px'
+    b.style.display = "block"; b.style.border = '6px ridge dodgerblue'; b.style.padding = '20px'; b.style.backgroundColor = "rgb(209, 210, 221)"
   };
   words.innerHTML = "BILLIE"
   document.body.style.backgroundImage = 'url(https://i.imgur.com/fUmPlII.jpg)'
@@ -148,7 +148,7 @@ const wunna = () => {
     d.style.display = "none";
   };
   if (g.style.display === "none" ) {
-    g.style.display = "block";
+    g.style.display = "block"; g.style.border = '6px ridge rgba(24, 6, 126, 0.801)'; g.style.padding = '20px'; g.style.backgroundColor = "rgb(209, 210, 221)"
   };
   document.body.style.backgroundImage = 'url(https://i.imgur.com/2Rc7G0i.jpg)'
   document.body.style.backgroundRepeat = 'no-repeat'
@@ -259,7 +259,7 @@ const cat = () => {
     b.style.display = "none";
   };
   if (d.style.display === "none" ) {
-    d.style.display = "block";
+    d.style.display = "block"; d.style.border = '6px ridge rgb(191, 117, 194)'; d.style.padding = '20px'; d.style.backgroundColor = "rgb(209, 210, 221)"
   };
 
   let songs = box
@@ -359,11 +359,12 @@ const back = () => {
     d.style.display = "none";
   };
   if (n.style.display === "none" ) {
-    n.style.display = "block";
-  };
+    n.style.display = "block"; n.style.border = '6px ridge rgb(191, 117, 194)'; n.style.padding = '20px'; n.style.backgroundColor = "rgb(209, 210, 221)";
+  }
 
-  let songs = box
-  songs.innerHTML = ""
+  
+  
+  
   document.body.style.backgroundImage = 'url(https://i.imgur.com/C4oqK7d.jpg)'
   document.body.style.backgroundRepeat = 'no-repeat'
   document.body.style.backgroundSize = 'cover'
@@ -449,8 +450,11 @@ const back = () => {
         test.innerText = bBar
         box.append(test)
       })
+
       box.style.color = "black"
       box.style.margin = "-50px 0px 450px 0px"
 }
+
+
 
 
