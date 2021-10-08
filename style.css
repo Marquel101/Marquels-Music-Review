@@ -13,7 +13,8 @@ a:hover{
 }
 
 body {
-  background:rgba(78, 107, 69, 0.781)
+  background:rgba(78, 107, 69, 0.781);
+  font-family: 'Bebas Neue', cursive;
 }
 
 /*when clicked*/
@@ -100,7 +101,11 @@ button:active {
 
 /*Title*/
 h1 {
-  
+  font-family: 'Bungee Shade', cursive;
+  color: black;
+  margin: 0 100px;
+  margin: 0 300px;
+  border: 10px double black;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -136,10 +141,36 @@ h4 {
   margin: 30px 500px 30px 0;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   body {
-    font-size: x-small;
-    background-image: linear-gradient(grey,white,grey);
+    font-size: smaller;
+    background-image: url("https://i.imgur.com/69ZlthD.png");
+    font-family: 'Rubik', sans-serif;
+
+  }
+  a {
+    background: rgb(209, 210, 221);;
+    color:rgba(3, 10, 41, 0.781);
+  }
+  #gunnalink{
+    background: rgba(11, 228, 138, 0.972);
+    color: black;
+  }
+  #billielink{
+    background-color: rgba(233, 210, 147, 0.972);
+    color: black;
+  }
+  #dojalink{
+    background-color: rgba(240, 78, 218, 0.972);
+    color: black;
+  }
+  #nickellink{
+    background-color: rgba(58, 90, 233, 0.972);
+    color: black; 
   }
 
+  h1 {
+    background: rgb(209, 210, 221);
+    margin: 0 150px;
+  }
 }

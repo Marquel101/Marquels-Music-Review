@@ -42,6 +42,7 @@ const bill = () => {
   
   let songs = box
   songs.innerHTML = ""
+
   if (g.style.display === "block" ) {
     g.style.display = "none";
   };
@@ -55,6 +56,7 @@ const bill = () => {
     b.style.display = "block"; b.style.border = '6px ridge dodgerblue'; b.style.padding = '20px'; b.style.backgroundColor = "rgb(209, 210, 221)"
   };
   words.innerHTML = "BILLIE"
+
   document.body.style.backgroundImage = 'url(https://i.imgur.com/fUmPlII.jpg)'
   document.body.style.backgroundRepeat = 'no-repeat'
   document.body.style.backgroundSize = 'cover'
@@ -348,6 +350,9 @@ const cat = () => {
   box.style.margin = "-0 0px 350px 0px"
 }
 const back = () => {
+
+  let songs = box
+  songs.innerHTML = ""
   
   if (g.style.display === "block" ) {
     g.style.display = "none";
